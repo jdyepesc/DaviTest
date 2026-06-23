@@ -5,7 +5,9 @@
       "PowerShell(java -version 2>&1)",
       "PowerShell(winget --version 2>&1)",
       "PowerShell(winget install Microsoft.OpenJDK.17 --silent --accept-package-agreements --accept-source-agreements)",
-      "PowerShell(winget install Apache.Maven --silent --accept-package-agreements --accept-source-agreements)"
+      "PowerShell(winget install Apache.Maven --silent --accept-package-agreements --accept-source-agreements)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_snapshot"
     ]
   }
 }

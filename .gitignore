@@ -24,3 +24,6 @@ logs/
 
 # Screenshots locales
 screenshots/
+
+# Playwright MCP
+.playwright-mcp/

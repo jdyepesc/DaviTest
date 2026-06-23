@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    Suite E2E OrangeHRM - DaviTest Framework
+    Ejecucion: mvn clean test -Dsurefire.suiteXmlFiles=testng-orangehrm.xml
+    Reporte:   mvn allure:serve
+-->
+<suite name="OrangeHRM E2E Suite" verbose="1" parallel="false">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="com.davitest.base.AllureListener"/>
+    </listeners>
+
+    <test name="Flujo E2E - Gestion de Empleados OrangeHRM">
+        <classes>
+            <class name="com.davitest.tests.OrangeHRMTest"/>
+        </classes>
+    </test>
+
+</suite>

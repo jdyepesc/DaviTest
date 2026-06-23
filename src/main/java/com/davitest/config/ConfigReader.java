@@ -42,10 +42,13 @@ public class ConfigReader {
         return Boolean.parseBoolean(get(key));
     }
 
-    public static String getBrowser()        { return get("browser"); }
-    public static String getBaseUrl()        { return get("base.url"); }
-    public static int getExplicitWait()      { return getInt("explicit.wait"); }
-    public static int getPageLoadTimeout()   { return getInt("page.load.timeout"); }
-    public static boolean isHeadless()       { return getBoolean("headless"); }
-    public static String getEnvironment()    { return get("environment"); }
+    public static String getBrowser()          { return get("browser"); }
+    public static String getBaseUrl()          { return get("base.url"); }
+    public static String getAppBaseUrl()       { return get("app.base.url"); }
+    public static int getExplicitWait()        { return getInt("explicit.wait"); }
+    public static int getPageLoadTimeout()     { return getInt("page.load.timeout"); }
+    public static boolean isHeadless()         { return getBoolean("headless"); }
+    public static String getEnvironment()      { return get("environment"); }
+    public static String getAdminUsername()    { return get("admin.username"); }
+    public static String getAdminPassword()    { return get("admin.password"); }
 }
